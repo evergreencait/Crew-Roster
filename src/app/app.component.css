@@ -13,3 +13,21 @@ h2 {
   color: #696969;
 
 }
+
+.navbar-header {
+  font-family: 'Reenie Beanie', cursive;
+
+}
+
+a {
+  font-size: 40px;
+}
+
+.navbar-default {
+  background-color: white;
+  font-family: 'Reenie Beanie', cursive;
+}
+
+.nav {
+  color: white;
+}
