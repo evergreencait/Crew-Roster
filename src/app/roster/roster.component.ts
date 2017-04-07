@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Crew } from '../crew.model';
 import { CrewService } from '../crew.service';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-roster',
@@ -11,7 +12,7 @@ import { CrewService } from '../crew.service';
 })
 
 export class RosterComponent implements OnInit {
-  crews: Crew[];
+  crews: FirebaseListObservable<any[]>;
   constructor(private router: Router, private crewService: CrewService){}
 
   ngOnInit(){

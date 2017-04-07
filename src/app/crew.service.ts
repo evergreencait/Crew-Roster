@@ -12,7 +12,7 @@ export class CrewService {
   }
 
   getCrew() {
-    return CREWS;
+    return this.crews;
   }
 
   getCrewById(crewId: number){
