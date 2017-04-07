@@ -1,3 +1,7 @@
 <h2>Road Crew Roster</h2>
 
-<p>People will be listed here shortly.</p>
+<div *ngFor="let crew of crews" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{crew.name}}</em> in: {{crew.department}}</h3>
+  </div>
+</div>
