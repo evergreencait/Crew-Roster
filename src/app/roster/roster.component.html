@@ -3,5 +3,12 @@
 <div *ngFor="let crew of crews | async" (click)="goToDetailPage(crew)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{crew.name}}</em> in: {{crew.department}}</h3>
-  </div>
-</div>
+    <div *ngIf="currentRoute === '/admin'">
+        <p>{{crew.department}}</p>
+        <p>{{crew.job}}</p>
+        <p>{{crew.experience}}</p>
+        <hr>
+        <app-edit-crew></app-edit-crew>
+      </div>
+    </div>
+  </div>>

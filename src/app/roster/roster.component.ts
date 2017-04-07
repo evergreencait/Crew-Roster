@@ -13,6 +13,8 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 export class RosterComponent implements OnInit {
   crews: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
+  
   constructor(private router: Router, private crewService: CrewService){}
 
   ngOnInit(){
