@@ -1,3 +1,18 @@
-<p>
-  edit-crew works!
-</p>
+<h4>Edit Crew Member Details</h4>
+
+<label>New Crew Name:</label>
+<input [(ngModel)]="selectedCrew.name">
+<br>
+
+<label>NewDepartment:</label>
+<input [(ngModel)]="selectedCrew.department">
+<br>
+
+<label>New Job:</label>
+<input [(ngModel)]="selectedCrew.job">
+<br>
+
+<label>New Experience:</label>
+<input [(ngModel)]="selectedCrew.experience">
+<br>
+<button routerLink="/roster" (click)="beginUpdatingCrew(selectedCrew)">Update</button>

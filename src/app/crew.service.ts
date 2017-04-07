@@ -22,4 +22,12 @@ export class CrewService {
      return this.angularFire.database.object('crews/' + crewId);
    }
 
+   updateCrew(localUpdatedCrew){
+    var crewEntryInFirebase = this.getCrewById(localUpdatedCrew.$key);
+    crewEntryInFirebase.update({name: localUpdatedCrew.name,
+                                department: localUpdatedCrew.department,
+                                job: localUpdatedCrew.job,
+                                experience: localUpdatedCrew.experience});
+  }
+
 }
