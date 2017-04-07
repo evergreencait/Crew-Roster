@@ -30,4 +30,9 @@ export class CrewService {
                                 experience: localUpdatedCrew.experience});
   }
 
+  deleteCrew(localCrewToDelete){
+    var crewEntryInFirebase = this.getCrewById(localCrewToDelete.$key);
+    crewEntryInFirebase.remove();
+  }
+
 }

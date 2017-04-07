@@ -16,3 +16,5 @@
 <input [(ngModel)]="selectedCrew.experience">
 <br>
 <button routerLink="/roster" (click)="beginUpdatingCrew(selectedCrew)">Update</button>
+<hr>
+<button (click)="beginDeletingCrew(selectedCrew)">Delete</button>

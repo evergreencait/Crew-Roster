@@ -20,4 +20,10 @@ export class EditCrewComponent implements OnInit {
     this.crewService.updateCrew(crewToUpdate);
   }
 
+  beginDeletingCrew(crewToDelete){
+   if(confirm("Are you sure you want to remove this crew member from the tour?")){
+     this.crewService.deleteCrew(crewToDelete);
+   }
+ }
+
 }
