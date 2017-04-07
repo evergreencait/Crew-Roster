@@ -1,6 +1,6 @@
 <div>
-  <h3>{{crewToDisplay.name}}</h3>
-  <h4>{{crewToDisplay.department}}</h4>
-  <p>Title: {{crewToDisplay.job}}</p>
-  <p>Experience: {{crewToDisplay.experience}}</p>
+  <h3>{{(crewToDisplay | async)?.name}}</h3>
+  <h4>{{(crewToDisplay | async)?.department}}</h4>
+  <p>Title: {{(crewToDisplay | async)?.job}}</p>
+  <p>Experience: {{(crewToDisplay | async)?.experience}}</p>
 </div>

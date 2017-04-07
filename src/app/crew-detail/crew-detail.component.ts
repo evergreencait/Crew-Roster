@@ -11,14 +11,14 @@ import { CrewService } from '../crew.service';
   providers: [CrewService]
 })
 export class CrewDetailComponent implements OnInit {
-  crewId: number;
-  crewToDisplay: Crew;
+  crewId: string;
+  crewToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private crewService: CrewService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.crewId = parseInt(urlParameters['id']);
+      this.crewId = urlParameters['id'];
     });
     this.crewToDisplay = this.crewService.getCrewById(this.crewId);
   }

@@ -19,7 +19,7 @@ export class RosterComponent implements OnInit {
     this.crews = this.crewService.getCrew();
   }
 
-  goToDetailPage(clickedCrew: Crew) {
-    this.router.navigate(['crews', clickedCrew.id]);
+  goToDetailPage(clickedCrew) {
+    this.router.navigate(['crews', clickedCrew.$key]);
   };
 }

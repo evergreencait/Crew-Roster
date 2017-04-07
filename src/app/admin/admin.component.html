@@ -1,0 +1,33 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Crew Member to Roster</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Crew Member's Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Crew Member's Department:</label>
+        <br>
+        <input #newDepartment>
+      </div>
+
+      <div>
+        <label>Crew Member's Job:</label>
+        <br>
+        <input #newJob>
+      </div>
+
+      <div>
+        <label>Crew Member's Experience:</label>
+        <br>
+        <input #newExperience>
+      </div>
+      <button routerLink="/roster" (click)="submitForm(newName.value, newDepartment.value, newJob.value, newExperience.value); newName.value=''; newDepartment.value=''; newJob.value=''; newExperience.value=''">Add</button>
+    </div>
+  </div>
+</div>
