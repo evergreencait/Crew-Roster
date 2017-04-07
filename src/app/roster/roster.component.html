@@ -1,6 +1,17 @@
 <h2>Road Crew Roster</h2>
 
-<div *ngFor="let crew of crews | async" class="panel panel-default">
+<p>Filter Crew Member's By Department:</p>
+<select (change)="onChange($event.target.value)">
+  <option value="allCrew" selected="selected">All Crew</option>
+  <option value="lighting">Lighting</option>
+  <option value="management">Mangement</option>
+</select>
+<br>
+<br>
+
+
+
+<div *ngFor="let crew of crews | async | department:filterByDepartment" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(crew)"><em>{{crew.name}}</em> in: {{crew.department}}</h3>
     <div *ngIf="currentRoute === '/admin'">

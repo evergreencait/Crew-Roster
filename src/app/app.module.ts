@@ -13,6 +13,7 @@ import { RosterComponent } from './roster/roster.component';
 import { CrewDetailComponent } from './crew-detail/crew-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditCrewComponent } from './edit-crew/edit-crew.component';
+import { DepartmentPipe } from './department.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     RosterComponent,
     CrewDetailComponent,
     AdminComponent,
-    EditCrewComponent
+    EditCrewComponent,
+    DepartmentPipe
   ],
   imports: [
     BrowserModule,
