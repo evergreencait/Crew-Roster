@@ -33,3 +33,22 @@ html {
   height: 500px;
   background-color: black;
 }
+
+.pic2 {
+  height: 400px;
+  float: center;
+  margin-left: 70%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  background-color:
+}
+
+.picture {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/6c/e0/26/6ce026daca450c8c4399dae2addbb4c4.jpg");
+  background-repeat: no-repeat;
+  margin-left: -10%;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}
