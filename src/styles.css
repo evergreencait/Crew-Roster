@@ -30,7 +30,7 @@ html {
 }
 
 .background {
-  height: 500px;
+  height: 800px;
   background-color: black;
 }
 
@@ -51,4 +51,9 @@ html {
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
+}
+
+.quote {
+  height: 100%;
+  margin-left: 25%;
 }
