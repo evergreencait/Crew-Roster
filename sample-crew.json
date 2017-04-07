@@ -1,0 +1,56 @@
+{ "crews": [{
+    "name": "Alfred Bello",
+    "department": "Lighting",
+    "job": "Light Tech",
+    "experience": "15 years",
+    "id": "1"
+    }, {
+    "name": "John Brown",
+    "department": "Merchandise",
+    "job": "Merch Table",
+    "experience": "2 years",
+    "id": "2"
+    }, {
+    "name": "Maggie",
+    "department": "Food",
+    "job": "Catering",
+    "experience": "20 years",
+    "id": "3"
+    }, {
+    "name": "Rose Marie",
+    "department": "Lighting",
+    "job": "Light Tech",
+    "experience": "4 years",
+    "id": "4"
+    }, {
+    "name": "Rubin Carter",
+    "department": "Security",
+    "job": "Bodyguard",
+    "experience": "30 years",
+    "id": "5"
+    }, {
+    "name": "Woody Guthrie",
+    "department": "Sound",
+    "job": "Sound Engineer",
+    "experience": "25 years",
+    "id": "6"
+    }, {
+    "name": "Rita May",
+    "department": "Sound",
+    "job": "Sound Engineer",
+    "experience": "10 years",
+    "id": "7"
+    }, {
+    "name": "Arthur Dexter Bradley",
+    "department": "Management",
+    "job": "Tour Manager",
+    "experience": "12 years",
+    "id": "8"
+    }, {
+    "name": "Jakob Dylan",
+    "department": "Management",
+    "job": "Stage Manager",
+    "experience": "7 years",
+    "id": "9"
+  }]
+}

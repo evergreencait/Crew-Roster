@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Crew } from './crew.model';
 import { CREWS } from './mock-crew';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Injectable()
 export class CrewService {
+  crews: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private angularFire: AngularFire) {
+    this.crews = angularFire.database.list('crews');
+  }
 
   getCrew() {
     return CREWS;
