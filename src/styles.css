@@ -12,7 +12,10 @@ html {
 .pic {
   background-image: url("http://www.stevewilkison.com/typography/wp-content/uploads/2013/09/sheltertext.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: right;
+  margin-left: 20%;
+  background-size: 80%;
+  background-attachment: fixed;
   height: 100%;
 }
 
@@ -20,7 +23,7 @@ html {
   box-shadow: 10px 10px 5px #888888;
   height: 400px;
   float: center;
-  margin-left: 5%;
+  margin-left: -20%;
   margin-top: 20%;
   margin-bottom: 20%;
   background-color:
