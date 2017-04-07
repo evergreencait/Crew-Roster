@@ -1,10 +1,17 @@
-body {
+.home {
   background-image: url("http://www.juanosborne.com/wp-content/uploads/2011/06/JO-D-110615-BobDylan01.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 html {
   background-color: white;
   height: 100%;
+}
+
+.pic {
+  background-size: contain;
+  height: 60%;
+  background-repeat: no-repeat;
 }
