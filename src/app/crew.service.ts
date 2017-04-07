@@ -11,4 +11,12 @@ export class CrewService {
     return CREWS;
   }
 
+  getCrewById(crewId: number){
+    for (var i = 0; i <= CREWS.length - 1; i++) {
+      if (CREWS[i].id === crewId) {
+        return CREWS[i];
+      }
+    }
+  }
+
 }
