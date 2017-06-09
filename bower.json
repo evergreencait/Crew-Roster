@@ -6,7 +6,7 @@
     "Caitlin Hines <caitlinhines@me.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/evergreencait/Crew-Roster",
   "ignore": [
     "**/.*",
     "node_modules",
